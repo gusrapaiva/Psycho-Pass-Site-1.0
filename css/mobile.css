@@ -1,0 +1,52 @@
+@media screen and (max-width: 750px) {
+
+
+    header{
+        display: none;
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    .conteudo {
+        display: flex;
+        place-content: center;
+    }
+    
+    .centro{
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .titulo h1{
+        font-size: 7.5vh;
+    }
+
+    .texto p{
+        font-size: 1.8vh;
+    }
+
+    .btn button{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .conteudo2{
+        max-width: 90%;
+    }
+
+    .paragrafo p{
+        font-size: 2vh;
+    }
+
+    .email h2{
+        font-size: 5vw;
+    }
+
+    .contato{
+        max-width: 100%;
+        text-align: center;
+    }
+}

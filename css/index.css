@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+.titulo h1{
+    font-size: 5vw;
+    color: #fff;
+    /* margin-top: 2rem; */
+}
+
+.subtitulo h2{
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.texto p{
+    margin-top: 1vw;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+.btn button{
+    margin-left: 8%;
+    font-size: 1.3vw;
+    padding: 0.2vw 7vw;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all 0.2s;
+}
+
+.btn button:hover{
+    transition: all 0.2s;
+    transform: scale(102%);
+}
+
+/* conteudo 2*/
+
+.paragrafo p{
+    color: #fff;
+}
+
+.carrossel{
+    margin-top: -2vw;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide{
+    display: none;
+    width: 100%;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+
+.conteudo{
+    max-width: 50%;
+}
+
+.centro{
+    margin-top: 2vw;
+    margin-left: 18%;
+}
+
+.conteudo2{
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+    max-width: 60%;
+}
+
+.paragrafo{
+    margin: 10px 0;
+    font-size: 1.3vw;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.contato{
+    max-width: 70%;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0.329), #fff, #fff, rgba(255, 255, 255, 0.329) ) 1;
+    padding: 0.4vw 1vw;
+    margin: 1.4vw auto;
+}
+
+.email{
+    color: #fff;
+}

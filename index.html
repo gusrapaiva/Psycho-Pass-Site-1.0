@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish&family=Noto+Sans:wght@500&family=Poppins:wght@400;500&display=swap');
+    </style>
+    <script src="script/script.js"></script>
+    <title>Psycho Pass</title>
+</head>
+<body>
+    
+<video id="bgvideo" src="assets/video-site-shortv.mp4" autoplay loop muted ></video>
+
+    <script>
+
+        let bg = document.getElementById('bgvideo');
+
+        // função detecta scroll
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() 
+        {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) 
+            {   
+                bgvideo.style.top = "0"
+            }
+            else
+            {
+                bgvideo.style.top = "2%"
+            }
+        }
+
+    </script>
+    
+<div class="overlay"><p>hi</p></div>
+
+
+<header>
+    <div class="abas">
+        <ul>
+            <li class="aba" >Menu</li>
+            <li class="aba" >Sobre</li>
+            <li class="aba" >Sobre Nós</li>
+            <li class="aba">FAQ</li>
+            <li class="aba">Contato</li>
+        </ul>
+    </div>
+</header>
+
+
+<!--sidebar mobile -->
+    <input type="checkbox" id="hamburger-input" class="burger-shower">
+        
+    <label id="hamburger-menu" for="hamburger-input"> 
+
+        <nav id="sidebar-menu">
+            <h3>Menu</h3> 
+            <ul>
+                <li class="mobaba">Menu</li>
+                <li class="mobaba">Sobre o Projeto</li>
+                <li class="mobaba">Sobre Nós</li>
+                <li class="mobaba">FAQ</li>
+                <li class="mobaba">Contato</li>
+            </ul>
+        </nav>
+    </label>
+
+    <div class="sidebar"></div>
+<!-- fim sidebar mobile -->
+
+<div class="carrossel">
+
+    <div class="slide fade" class="conteudo" style="display: block;">
+
+        <div class="centro">
+            <div class="titulo">
+                <h1>PsychoPass</h1>
+            </div>
+            <div class="texto">
+                <p>Uma nova forma de cuidar da sua saúde mental.</p>
+            </div>
+            <div class="btn">
+                <button id="vmais">Ver Mais</button>
+               <!-- <a href="abas/sobre.html"></a>  -->
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="slide fade conteudo2">
+
+        <div class="titulo">
+            <h1>Sobre o app</h1>
+        </div>
+    
+        <div class="paragrafo">
+        <p>Este é o Psycho Pass e nossa missão é promover o bem-estar mental e fornecer apoio à saúde psicológica de forma ética e inovadora. Nosso compromisso é oferecer uma plataforma acessível e envolvente para ajudar as pessoas a cuidarem de sua saúde mental e emocional. Tendo a clara inspiração do anime "Psycho-Pass" e indo contra o punitivismo e a invasividade cyberpunk do Sistema Sibyl, estamos moldando um futuro em que a compaixão e o cuidado com a mente são prioridades. </p>
+        </div>
+    
+        <div class="paragrafo">
+        <p>O "Psycho-Pass" é uma série de anime que nos inspirou a criar este aplicativo. Porém, diferente do futuro distópico apresentado na história, queremos criar algo que demonstre a importância do cuidado com a nossa saúde mental. Nosso aplicativo busca tal abordagem dissonante do anime, promovendo o bem-estar e o autocuidado, ao invés de uma vigilância invasiva. Estamos comprometidos em criar um espaço seguro para avaliação e apoio à saúde mental, proporcionando uma experiência positiva para nossos usuários. </p>
+        </div>
+        
+        <div class="paragrafo">
+        <p>Estamos atualmente em processo de pesquisa de requisitos para a criação do aplicativo e prestes a começar o processo de desenvolvimento.</p>
+        </div>
+    
+    </div>
+
+    <div class="slide fade conteudo2">
+        <div class="titulo">
+            <h1>Sobre nós</h1>
+        </div>
+    
+        <div class="paragrafo">
+            <p>
+                Somos um grupo de estudantes da ETEC de Guarulhos, apaixonados por tecnologia e dedicados a fazer a diferença no mundo. Atualmente, estamos no curso Técnico em Desenvolvimento de Sistemas e estamos empolgados em aplicar nosso conhecimento para criar soluções inovadoras para diversas áreas.
+            </p>
+        </div>
+    
+        <div class="paragrafo">
+            <p>
+                Nossa jornada acadêmica começou no primeiro semestre de 2023 e estamos ansiosos para concluir o curso em julho de 2024 e apresentar o aplicativo com todos os seus recursos como parte do nosso projeto de conclusão de curso.
+            </p>
+        </div>
+        
+        <div class="paragrafo">
+            <p>
+                Embora ainda sejamos estudantes, nossa equipe é apaixonada, dedicada e comprometida em oferecer soluções excepcionais para os diversos problemas da sociedade.
+            </p>
+        </div>
+
+        <div class="paragrafo">
+            <p>
+                Através de pesquisas, consultorias, desenvolvimento e muito trabalho em equipe, estamos determinados a criar uma ferramenta que ajude as pessoas a cuidarem de sua saúde mental de maneira ética e compassiva.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="slide fade conteudo2">
+
+        <div class="titulo">
+            <h1>FAQ</h1>
+        </div>
+
+        <div class="subtitulo">
+            <h2>O que é o Psycho Pass? </h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Inspirado pela série de anime "Psycho-Pass,” é um aplicativo que avalia a saúde mental dos usuários e promove o autocuidado de diversas maneiras, oferecendo orientações e auxílio para a procura por ajuda profissional, quando necessário. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>Quais linguagens e sistemas vocês vão usar? </h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Para o desenvolvimento do aplicativo, estamos utilizando uma estrutura bem popular de aplicativo móvel baseada na linguagem Javascript chamada React  Native. Além disso, melhoraremos a aparência e as funcionalidades do aplicativo com alguns frameworks. Quanto ao armazenamento, consulta e tratamento de dados, usaremos o MySQL. 
+            </p>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Para o desenvolvimento deste website, estamos usando HTML, CSS, Javascript e algumas bibliotecas de animações. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>Quando o aplicativo será lançado?</h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Pretendemos lançar uma versão final para apresentação do trabalho de conclusão de curso até junho de 2024. Se o projeto for bem recebido no Brasil, gostaríamos de melhorá-lo e também localizá-lo para outras línguas (francês, inglês, espanhol, alemão, mandarim, russo, japonês, etc.) para alcançar um maior público e promover o autocuidado e a procura por profissionais da saúde em vários países. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>Qual será a base para cálculo da minha saúde mental? Posso confiar na legitimidade da análise psicológica do aplicativo? </h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Estaremos constantemente atualizando os cálculos do aplicativo com base no DSM-5, o Manual Diagnóstico e Estatístico de Transtornos Mentais, e contamos com diversos consultores especializados em psicologia para garantir que nossas análises sejam precisas e confiáveis. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>As minhas informações e dados estarão seguros com vocês? </h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Sim, a segurança de seus dados é uma prioridade. Implementaremos medidas rigorosas de segurança e continuaremos a aprimorar a segurança do aplicativo durante todo o processo de desenvolvimento. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>O aplicativo será gratuito? </h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                As versões iniciais do aplicativo serão gratuitas enquanto estamos desenvolvendo-o como parte de nosso projeto de conclusão de curso na ETEC de Guarulhos. Em breve, você poderá se inscrever para acessar as primeiras versões e testar suas funcionalidades. 
+            </p>
+        </div>
+
+        <div class="subtitulo">
+            <h2>Posso acessar a minha conta pelo navegador web?</h2>
+        </div>
+        <div class="paragrafo">
+            <p>
+                Por enquanto, o acesso será apenas pelo aplicativo móvel. No entanto, se o aplicativo for bem-sucedido, consideraremos a possibilidade de criar uma versão web para os usuários terem mais um canal para o autocuidado com a saúde mental. 
+            </p>
+        </div>
+
+    </div>
+
+    <div class="slide fade conteudo2">
+        
+        <div class="titulo">
+            <h1>Contato</h1>
+        </div>
+
+            <div class="contato">
+
+                <div class="subtitulo">
+                    <h2>Armstrong Kioshi Nambu </h2>
+                </div>
+        
+                <div class="email">
+                    <h2>armstrong.nambu@etec.sp.gov.br</h2>
+                </div>
+    
+            </div>
+    
+            <div class="contato">
+    
+                <div class="subtitulo">
+                    <h2>Gustavo Rodrigues de Almeida Paiva</h2>
+                </div>
+        
+                <div class="email">
+                    <h2>gustavo.paiva9@etec.sp.gov.br </h2>
+                </div>
+    
+            </div>
+        
+
+            <div class="contato">
+
+                <div class="subtitulo">
+                    <h2>Gustavo Thyerris do Nascimento Oliveira </h2>
+                </div>
+        
+                <div class="email">
+                    <h2>Gustavo.oliveira890@etec.sp.gov.br</h2>
+                </div>
+    
+            </div>
+    
+            <div class="contato">
+    
+                <div class="subtitulo">
+                    <h2>Marina Ribeiro Coral</h2>
+                </div>
+        
+                <div class="email">
+                    <h2>marina.coral@etec.sp.gov.br</h2>
+                </div>
+    
+            </div>
+
+
+            <div class="contato">
+
+                <div class="subtitulo">
+                    <h2>Rômulo Ornelas de Oliveira Junior</h2>
+                </div>
+        
+                <div class="email">
+                    <h2>romulo.oliveira24@etec.sp.gov.br</h2>
+                </div>
+
+            </div>
+    
+
+       
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
